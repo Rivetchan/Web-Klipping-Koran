@@ -1,0 +1,134 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px;
+    color: #000;
+    background-color: #fff;
+}
+
+/* Tombol Aksi */
+.print-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.btn-print,
+.btn-back {
+    padding: 10px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-print {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.btn-back {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.btn-print:hover {
+    background-color: #218838;
+}
+
+.btn-back:hover {
+    background-color: #5a6268;
+}
+
+/* Kop Surat */
+.kop-surat {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.kop-kiri {
+    flex: 0 0 100px;
+}
+.kop-kiri img.logo-kop {
+    width: 90px;
+    height: auto;
+}
+
+.kop-kanan {
+    flex: 1;
+    text-align: center;
+}
+.kop-kanan h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.kop-kanan h2 {
+    margin: 4px 0;
+    font-size: 18px;
+}
+.kop-kanan p {
+    margin: 2px 0;
+    font-size: 14px;
+}
+
+.garis-pemisah {
+    border: 2px solid #000;
+    margin: 15px 0 25px;
+}
+
+.judul-print {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+table th, table td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+
+table thead tr {
+    background-color: #a8e6a1; /* Hijau muda */
+}
+
+table img {
+    max-width: 80px;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Footer */
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 13px;
+    color: #555;
+}
+
+/* Cetak */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+
+    body {
+        font-size: 12pt;
+        padding: 0;
+    }
+
+    .footer {
+        margin-top: 50px;
+    }
+}

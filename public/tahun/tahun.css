@@ -1,0 +1,153 @@
+/* Reset dan base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #fff;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-kominfo {
+    width: 60px;
+    height: auto;
+}
+
+.navbar-title {
+    font-size: 1.8rem;
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+.navbar-right {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-btn {
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    background-color: #4ece54;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #3e9643;
+}
+
+.print-btn {
+    background-color: #4178de;
+}
+
+.print-btn:hover {
+    background-color: #2c5db8;
+}
+
+/* Container utama tabel */
+.table-container {
+    max-width: 1200px;
+    width: 95%;
+    margin: 3rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    padding: 14px 18px;
+    border: 1px solid #ccc;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #2e7d32;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.year-image {
+    width: 100px;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+/* Tombol Aksi */
+.btn-edit, .btn-hapus {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 2px 4px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.btn-edit {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: #2980b9;
+}
+
+.btn-hapus {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-hapus:hover {
+    background-color: #c0392b;
+}
+
+/* Footer */
+.footer {
+    background-color: #61db67;
+    color: white;
+    text-align: center;
+    padding: 0.75rem;
+    font-size: 0.95rem;
+    margin-top: auto;
+}

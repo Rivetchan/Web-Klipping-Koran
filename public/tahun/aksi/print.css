@@ -1,0 +1,105 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    margin: 40px;
+}
+
+.kop-surat {
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #000;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.kop-kiri {
+    flex: 0 0 100px;
+}
+
+.logo-kop {
+    width: 90px;
+    height: auto;
+}
+
+.kop-kanan {
+    flex: 1;
+    text-align: center;
+}
+
+.kop-kanan h1 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.kop-kanan h2 {
+    font-size: 18px;
+    margin: 4px 0;
+}
+
+.kop-kanan p {
+    font-size: 14px;
+    margin: 2px 0;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #fff; /* Warna putih untuk judul utama */
+    padding: 10px;
+    border-radius: 6px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+th {
+    background-color: #61db67; /* Warna hijau muda untuk judul tabel */
+}
+
+img {
+    width: 80px;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.actions {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-back, button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btn-back:hover, button:hover {
+    background-color: #2c80b4;
+}
+
+@media print {
+    .btn-back,
+    button,
+    .actions {
+        display: none;
+    }
+}
