@@ -1,0 +1,171 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Container utama */
+.container {
+    max-width: 1200px;
+    width: 95%;
+    margin: 3rem auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Tombol Kembali */
+.btn-kembali {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #757575;
+    color: white;
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    z-index: 10;
+}
+
+.btn-kembali:hover {
+    background-color: #5c5c5c;
+}
+
+/* Judul */
+h1 {
+    font-size: 2rem;
+    color: #2e7d32;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Tombol Tambah dan Print */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    position: sticky;
+    bottom: 10px;
+    background: #ffffff;
+    padding: 10px 0;
+    z-index: 5;
+    border-top: 1px solid #ddd;
+}
+
+.btn-tambah,
+.btn-print {
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-tambah {
+    background-color: #4caf50;
+    color: white;
+}
+
+.btn-tambah:hover {
+    background-color: #388e3c;
+}
+
+.btn-print {
+    background-color: #4178de;
+    color: white;
+}
+
+.btn-print:hover {
+    background-color: #2c5db8;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+thead {
+    background-color: #2e7d32;
+    color: white;
+}
+
+th, td {
+    padding: 14px 18px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 14px;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Gambar */
+img {
+    width: 80px;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+/* Tombol Aksi */
+.btn-edit,
+.btn-hapus {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 2px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.btn-edit {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: #2980b9;
+}
+
+.btn-hapus {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-hapus:hover {
+    background-color: #c0392b;
+}
+
+/* Footer */
+.footer {
+    background-color: #61db67;
+    color: white;
+    text-align: center;
+    padding: 0.75rem;
+    font-size: 0.95rem;
+    margin-top: auto;
+}
