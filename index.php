@@ -44,7 +44,7 @@ if (!isset($_SESSION['welcome_shown'])) {
             </nav>
         </div>
         <div class="navbar-right">
-            <a href="profil.php" class="btn btn-profile">Profil</a>
+            <a href="profile.php" class="btn btn-profile">Profil</a>
             <a href="logout.php" class="btn btn-danger">Logout</a>
         </div>
     </header>
