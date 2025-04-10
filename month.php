@@ -58,7 +58,7 @@ if ($result) {
         </div>
         <div class="navbar-right">
             <a href="profile.php" class="btn btn-profile">Profil</a>
-            <a href="index.php" class="btn btn-danger">Kembali</a> 
+            <a href="index.php" class="btn btn-danger">Kembali</a>
         </div>
     </header>
 
@@ -70,7 +70,7 @@ if ($result) {
             <section class="available-months">
                 <div class="bulan-grid">
                     <?php foreach ($bulanTersedia as $bulan): ?>
-                        <a href="week.php?BulanID=<?= $bulan['BulanID']; ?>" class="bulan-card">
+                        <a href="week.php?BulanID=<?= $bulan['BulanID']; ?>&TahunID=<?= $tahunID; ?>" class="bulan-card">
                             <img src="public/bulan/aset/<?= htmlspecialchars($bulan['Image']); ?>" alt="<?= htmlspecialchars($bulan['NamaBulan']); ?>">
                             <div class="caption"><?= htmlspecialchars($bulan['NamaBulan']); ?></div>
                         </a>
